@@ -551,8 +551,8 @@ class ChatState extends State<Chat> {
       } else {
         final messageWidth =
             widget.showUserAvatars && message.author.id != widget.user.id
-                ? min(constraints.maxWidth * 0.72, 440).floor()
-                : min(constraints.maxWidth * 0.78, 440).floor();
+                ? min(constraints.maxWidth * 0.72, 1440).floor()
+                : min(constraints.maxWidth * 0.78, 1440).floor();
 
         messageWidget = Message(
           audioMessageBuilder: widget.audioMessageBuilder,
